@@ -1,0 +1,44 @@
+<div class="row mt-5">
+  <div class="col-12 text-center">
+    <h2>{{ recipe.name | uppercase }}</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-12">
+    <h6>Ingredients</h6>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let ingr of recipe.ingredients">
+        {{ ingr.name }} - {{ ingr.amount }}
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="d-inline d-flex justify-content-end">
+      <button (click)="onAddToShoppingList()" class="btn btn-custom-2">
+        Add Ingredients to Shopping List
+      </button>
+    </div>
+  </div>
+</div>
+<div class="row my-4 py-2">
+  <h6>Description:</h6>
+  <div class="col-12 py-2">
+    {{ recipe.description }}
+  </div>
+</div>
+
+<div>
+  <div class="col-12">
+    <div class="d-inline d-flex justify-content-around">
+      <button (click)="onEditRecipe()" class="btn my-2 btn-custom">
+        Edit Recipe
+      </button>
+      <button (click)="onDeleteRecipe()" class="btn my-2 btn-custom">
+        Delete Recipe
+      </button>
+    </div>
+  </div>
+</div>

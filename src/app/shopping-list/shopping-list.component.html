@@ -1,0 +1,22 @@
+<div class="row mt-5">
+  <div class="col-12 col-md-6 p-4">
+    <app-shopping-edit></app-shopping-edit>
+  </div>
+  <div class="col-12 col-md-6 p-4">
+    <div class="text-center">
+      <h2>Shopping List</h2>
+    </div>
+    <ul class="list-group list-group-flush">
+      <a
+        class="list-group-item"
+        *ngFor="
+          let ingredient of (ingredients | async).ingredients;
+          let i = index
+        "
+        (click)="onEditItem(i)"
+      >
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
+  </div>
+</div>

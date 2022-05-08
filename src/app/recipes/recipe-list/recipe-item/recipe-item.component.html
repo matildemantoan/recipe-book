@@ -1,0 +1,16 @@
+<a [routerLink]="[index]" routerLinkActive="active" class="list-group-item">
+  <div class="row d-flex justify-content-around h-custom">
+    <div class="col-4">
+      <img
+        src="{{ recipe.imagePath }}"
+        alt="{{ recipe.name }}"
+        class="img-fluid"
+      />
+    </div>
+    <div class="col-8 d-flex align-items-center">
+      <h6 class="list-group-item-heading">
+        {{ recipe.name }}
+      </h6>
+    </div>
+  </div>
+</a>

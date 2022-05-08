@@ -1,0 +1,27 @@
+* {
+  letter-spacing: 1px;
+}
+
+.btn-custom {
+  background-color: #184d47;
+  color: white;
+  font-weight: 400;
+}
+
+.btn-custom-2 {
+  background-color: transparent;
+  color: #184d47;
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.btn-check:focus + .btn,
+.btn:focus,
+.form-control:focus {
+  box-shadow: none;
+}

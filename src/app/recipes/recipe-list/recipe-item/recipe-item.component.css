@@ -1,0 +1,12 @@
+img {
+  width: 100px;
+  height: 80px;
+}
+.active {
+  background-color: #4b7e77cc;
+  border: none;
+}
+
+.list-group-item:hover {
+  color: #184d47de;
+}
